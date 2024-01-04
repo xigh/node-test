@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "target": "es6",                           // Spécifie la version de ECMAScript cible pour la sortie.
+      "module": "esnext",                        // Spécifie le mode de génération de code pour les modules.
+      "lib": ["dom", "dom.iterable", "esnext"],  // Liste des bibliothèques de déclaration de fichiers à inclure dans la compilation.
+      "allowJs": true,                           // Autorise la compilation de fichiers JavaScript.
+      "skipLibCheck": true,                      // Ignore les vérifications de type sur les fichiers de déclaration.
+      "esModuleInterop": true,                   // Active l'interopérabilité par défaut pour l'importation de modules CommonJS.
+      "allowSyntheticDefaultImports": true,      // Permet les importations par défaut à partir de modules sans exportation par défaut.
+      "strict": true,                            // Active une série d'options strictes pour maximiser la robustesse du code.
+      "forceConsistentCasingInFileNames": true,  // Assure la cohérence des majuscules/minuscules dans les références de fichiers.
+      "moduleResolution": "node",                // Stratégie de résolution de modules.
+      "resolveJsonModule": true,                 // Inclut les modules JSON.
+      "isolatedModules": true,                   // Garantit que chaque fichier peut être compilé séparément.
+      "noEmit": true,                            // N'émet pas de fichiers de sortie.
+      "noImplicitReturns": true,
+      "jsx": "react"                             // Spécifie le mode JSX pour la prise en charge de React.
+    },
+    "include": [
+      "src/**/*"  // Inclut tous les fichiers dans le dossier src et ses sous-dossiers.
+    ],
+    "exclude": [
+      "node_modules",  // Exclut le dossier node_modules pour améliorer les performances.
+      "**/*.spec.ts"   // Exclut les fichiers de test.
+    ]
+  }
+  
